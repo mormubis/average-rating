@@ -25,6 +25,6 @@ function averageRatingOfOpponents(
   return Math.round(sum / opponentRatings.length);
 }
 
-export { averageRatingOfOpponents as tiebreak };
+export { averageRatingOfOpponents, averageRatingOfOpponents as tiebreak };
 
 export { type GameKind, type Result, type Game, type Player } from './types.js';

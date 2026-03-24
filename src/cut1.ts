@@ -30,6 +30,9 @@ function averageRatingOfOpponentsCut1(
   return Math.round(sum / trimmed.length);
 }
 
-export { averageRatingOfOpponentsCut1 as tiebreak };
+export {
+  averageRatingOfOpponentsCut1,
+  averageRatingOfOpponentsCut1 as tiebreak,
+};
 
 export { type GameKind, type Result, type Game, type Player } from './types.js';
