@@ -27,10 +27,11 @@ const players = [
   { id: 'C', rating: 1700 },
   { id: 'D', rating: 1900 },
 ];
+// games[n] = round n+1; Game has no `round` field
 const games = [
-  { blackId: 'B', result: 1, round: 1, whiteId: 'A' },
-  { blackId: 'C', result: 0.5, round: 2, whiteId: 'A' },
-  { blackId: 'A', result: 0, round: 3, whiteId: 'D' },
+  [{ blackId: 'B', result: 1, whiteId: 'A' }], // round 1
+  [{ blackId: 'C', result: 0.5, whiteId: 'A' }], // round 2
+  [{ blackId: 'A', result: 0, whiteId: 'D' }], // round 3
 ];
 
 const avg = averageRatingOfOpponents('A', games, players);
@@ -40,9 +41,9 @@ const avg = averageRatingOfOpponents('A', games, players);
 ## API
 
 All functions require a `players` array whose entries carry a `rating` field.
-They return `0` when no rated opponents have been faced. They are drop-in
-compatible with the shared `Tiebreak` type
-`(playerId: string, games: Game[], players: Player[]) => number`.
+They return `0` when no rated opponents have been faced. Round is determined by
+array position: `games[0]` = round 1, `games[1]` = round 2, etc. The `Game` type
+has no `round` field.
 
 ### `averageRatingOfOpponents(playerId, games, players)`
 
@@ -51,7 +52,7 @@ compatible with the shared `Tiebreak` type
 `rating` are skipped. Returns the rounded integer average.
 
 ```typescript
-averageRatingOfOpponents(playerId: string, games: Game[], players: Player[]): number
+averageRatingOfOpponents(playerId: string, games: Game[][], players: Player[]): number
 ```
 
 ### `averageRatingOfOpponentsCut1(playerId, games, players)`
@@ -62,7 +63,7 @@ rounded integer average of the remainder. Returns `0` if only one rated opponent
 was faced.
 
 ```typescript
-averageRatingOfOpponentsCut1(playerId: string, games: Game[], players: Player[]): number
+averageRatingOfOpponentsCut1(playerId: string, games: Game[][], players: Player[]): number
 ```
 
 ## Contributing
