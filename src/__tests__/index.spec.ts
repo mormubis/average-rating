@@ -1,9 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
-import {
-  averageRatingOfOpponents,
-  averageRatingOfOpponentsCut1,
-} from '../functions.js';
+import { tiebreak as averageRatingOfOpponentsCut1 } from '../cut1.js';
+import { tiebreak as averageRatingOfOpponents } from '../index.js';
 
 import type { Game, Player } from '../types.js';
 
