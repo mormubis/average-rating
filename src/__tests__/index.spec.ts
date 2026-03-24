@@ -19,13 +19,19 @@ const PLAYERS: Player[] = [
   { id: 'D', rating: 2100 },
 ];
 
-const GAMES: Game[] = [
-  { blackId: 'B', result: 1, round: 1, whiteId: 'A' },
-  { blackId: 'D', result: 0, round: 1, whiteId: 'C' },
-  { blackId: 'D', result: 0.5, round: 2, whiteId: 'A' },
-  { blackId: 'B', result: 0, round: 2, whiteId: 'C' },
-  { blackId: 'C', result: 1, round: 3, whiteId: 'A' },
-  { blackId: 'B', result: 1, round: 3, whiteId: 'D' },
+const GAMES: Game[][] = [
+  [
+    { blackId: 'B', result: 1, whiteId: 'A' },
+    { blackId: 'D', result: 0, whiteId: 'C' },
+  ],
+  [
+    { blackId: 'D', result: 0.5, whiteId: 'A' },
+    { blackId: 'B', result: 0, whiteId: 'C' },
+  ],
+  [
+    { blackId: 'C', result: 1, whiteId: 'A' },
+    { blackId: 'B', result: 1, whiteId: 'D' },
+  ],
 ];
 
 describe('averageRatingOfOpponents', () => {
@@ -47,7 +53,7 @@ describe('averageRatingOfOpponentsCut1', () => {
   });
 
   it('returns 0 when only one opponent (all cut)', () => {
-    const games: Game[] = [{ blackId: 'B', result: 1, round: 1, whiteId: 'A' }];
+    const games: Game[][] = [[{ blackId: 'B', result: 1, whiteId: 'A' }]];
     expect(averageRatingOfOpponentsCut1('A', games, PLAYERS)).toBe(0);
   });
 });

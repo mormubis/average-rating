@@ -4,7 +4,7 @@ import type { Game, Player } from './types.js';
 
 function averageRatingOfOpponents(
   playerId: string,
-  games: Game[],
+  games: Game[][],
   players: Player[],
 ): number {
   const opponentRatings: number[] = [];
@@ -27,7 +27,7 @@ function averageRatingOfOpponents(
 
 function averageRatingOfOpponentsCut1(
   playerId: string,
-  games: Game[],
+  games: Game[][],
   players: Player[],
 ): number {
   const opponentRatings: number[] = [];
