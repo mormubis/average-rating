@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   averageRatingOfOpponents,
   averageRatingOfOpponentsCut1,
-} from '../index.js';
+} from '../functions.js';
 
 import type { Game, Player } from '../types.js';
 
