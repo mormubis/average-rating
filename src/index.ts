@@ -1,4 +1,4 @@
-import { BYE_SENTINEL, gamesForPlayer } from './utilities.js';
+import { gamesForPlayer } from './utilities.js';
 
 import type { Game, Player } from './types.js';
 
@@ -9,7 +9,7 @@ function averageRatingOfOpponents(
 ): number {
   const opponentRatings: number[] = [];
   for (const g of gamesForPlayer(player, games)) {
-    if (g.black === BYE_SENTINEL || g.white === BYE_SENTINEL) {
+    if (g.black === g.white) {
       continue;
     }
     const opponentId = g.white === player ? g.black : g.white;
