@@ -1,7 +1,6 @@
 # Average Rating
 
 [![npm](https://img.shields.io/npm/v/@echecs/average-rating)](https://www.npmjs.com/package/@echecs/average-rating)
-[![Test](https://github.com/mormubis/average-rating/actions/workflows/test.yml/badge.svg)](https://github.com/mormubis/average-rating/actions/workflows/test.yml)
 [![Coverage](https://codecov.io/gh/mormubis/average-rating/branch/main/graph/badge.svg)](https://codecov.io/gh/mormubis/average-rating)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
