@@ -4,6 +4,8 @@ Agent guidance for the `@echecs/average-rating` repository — a TypeScript
 library implementing the Average Rating of Opponents tiebreaks following FIDE
 Tiebreak Regulations (sections 10.1 and 10.6).
 
+**See also:** [`REFERENCES.md`](REFERENCES.md) | [`SPEC.md`](SPEC.md)
+
 See the root `AGENTS.md` for workspace-wide conventions.
 
 **Backlog:** tracked in
@@ -101,6 +103,16 @@ pnpm lint && pnpm test && pnpm build
   `players` array before passing it.
 - **No runtime dependencies** — keep it that way.
 - **ESM-only** — the package ships only ESM. Do not add a CJS build.
+
+---
+
+## Tiebreak Signature
+
+All tiebreak functions consumed by `@echecs/tournament` must conform to:
+
+```typescript
+(playerId: string, games: Game[], players: Map<string, Player>) => number;
+```
 
 ---
 
