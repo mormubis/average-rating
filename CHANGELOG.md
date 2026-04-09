@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.1] - 2026-04-09
+
+### Fixed
+
+- documented `tiebreak` export alias
+- documented `Result` and `Player` type exports
+- clarified `Player.rating` is optional
+
 ## 3.0.0 — 2026-03-25
 
 ### Changed
