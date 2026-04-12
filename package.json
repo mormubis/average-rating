@@ -1,7 +1,7 @@
 {
   "author": "Adrian de la Rosa <adrian@delarosab.me>",
   "bugs": {
-    "url": "https://github.com/mormubis/average-rating/issues"
+    "url": "https://github.com/echecsjs/average-rating/issues"
   },
   "description": "Average Rating of Opponents tiebreaks (FIDE 10.1 and 10.6) for chess tournaments. Zero dependencies.",
   "devDependencies": {
@@ -41,7 +41,7 @@
     "README.md",
     "CHANGELOG.md"
   ],
-  "homepage": "https://github.com/mormubis/average-rating#readme",
+  "homepage": "https://github.com/echecsjs/average-rating#readme",
   "keywords": [
     "aro",
     "average-rating",
@@ -60,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mormubis/average-rating.git"
+    "url": "https://github.com/echecsjs/average-rating.git"
   },
   "scripts": {
     "build": "tsdown",

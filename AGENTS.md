@@ -9,7 +9,7 @@ Tiebreak Regulations (sections 10.1 and 10.6).
 See the root `AGENTS.md` for workspace-wide conventions.
 
 **Backlog:** tracked in
-[GitHub Issues](https://github.com/mormubis/average-rating/issues).
+[GitHub Issues](https://github.com/echecsjs/average-rating/issues).
 
 ---
 

@@ -1,7 +1,7 @@
 # Average Rating
 
 [![npm](https://img.shields.io/npm/v/@echecs/average-rating)](https://www.npmjs.com/package/@echecs/average-rating)
-[![Coverage](https://codecov.io/gh/mormubis/average-rating/branch/main/graph/badge.svg)](https://codecov.io/gh/mormubis/average-rating)
+[![Coverage](https://codecov.io/gh/echecsjs/average-rating/branch/main/graph/badge.svg)](https://codecov.io/gh/echecsjs/average-rating)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Average Rating** is a TypeScript library implementing the Average Rating of
@@ -147,4 +147,4 @@ import {
 ## Contributing
 
 Contributions are welcome. Please open an issue at
-[github.com/mormubis/average-rating/issues](https://github.com/mormubis/average-rating/issues).
+[github.com/echecsjs/average-rating/issues](https://github.com/echecsjs/average-rating/issues).
