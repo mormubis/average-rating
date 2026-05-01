@@ -4,6 +4,9 @@
     "url": "https://github.com/echecsjs/average-rating/issues"
   },
   "description": "Average Rating of Opponents tiebreaks (FIDE 10.1 and 10.6) for chess tournaments. Zero dependencies.",
+  "peerDependencies": {
+    "@echecs/tournament": "^2.0.0"
+  },
   "devDependencies": {
     "@echecs/tournament": "^2.1.2",
     "@eslint/js": "^10.0.1",
