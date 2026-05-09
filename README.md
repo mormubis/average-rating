@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/@echecs/average-rating)](https://www.npmjs.com/package/@echecs/average-rating)
 [![Coverage](https://codecov.io/gh/echecsjs/average-rating/branch/main/graph/badge.svg)](https://codecov.io/gh/echecsjs/average-rating)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Spec](https://img.shields.io/badge/Spec-FIDE-green.svg)](SPEC.md)
 
 **Average Rating** is a TypeScript library implementing the Average Rating of
 Opponents tiebreaks for chess tournaments, following the
